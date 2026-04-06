@@ -25,6 +25,7 @@ def main():
     system_prompt = (
         '당신은 친절한 챗봇입니다. 사용자의 질문에 50단어 이내로 간결하게 답변해주세요.'
         '사용자가 다른 언어로 말하거나 질문이 다른 언어로 인식되더라도, 답변은 항상 한국어로만 작성합니다.'
+        '애매한 질문은 한다면. 에에- 라고 답을 합니다.'
     )
     if 'messages' not in st.session_state:
         st.session_state['messages'] = [
